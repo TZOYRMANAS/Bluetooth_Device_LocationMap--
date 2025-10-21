@@ -17,15 +17,11 @@ except ImportError:
     DiscoveryService = None
 
 def bluetooth_classic_scan(timeout=10):
-    """
- This scan finds ONLY Bluetooth classic (non-BLE) devices in *pairing mode*
-    """
+ 
     return bt.discover_devices(duration=timeout, flush_cache=True, lookup_names>
 
 def bluetooth_low_energy_scan(timeout=10):
-    """
-    currently Linux only
-    """
+  
     if DiscoveryService is None:
         return None
 
